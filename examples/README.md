@@ -1,20 +1,25 @@
-# Exemplos e Referências
+# 📚 Examples — Referências de Implementação
 
-Esta pasta contém exemplos de implementação para cada etapa do desafio.
+Esta pasta contém referências e exemplos para cada etapa do projeto MentorIA.
 
-## Vídeos de Referência
+## O que você encontra aqui
 
-> 🎬 Em breve serão disponibilizados vídeos demonstrando a implementação completa de cada etapa, com foco no raciocínio por trás de cada decisão.
+| Arquivo | Descrição |
+|---|---|
+| `exemplo_system_prompt.txt` | System prompt completo comentado |
+| `exemplo_resposta_trilha.md` | Exemplo de resposta detalhada sobre trilha de carreira |
+| `exemplo_avaliacao_llm_judge.py` | Script de avaliação automática usando LLM-as-judge |
 
-| Etapa | Descrição | Link |
-|-------|-----------|------|
-| Documentação | Como definir o caso de uso e arquitetura | [em breve] |
-| Base de Conhecimento | Como usar os dados mockados | [em breve] |
-| Prompts | Como criar prompts eficazes | [em breve] |
-| Aplicação | Como criar o chatbot funcional | [em breve] |
-| Métricas | Como avaliar seu agente | [em breve] |
-| Pitch | Como apresentar sua solução | [em breve] |
+---
 
-## Exemplo de Implementação Simples
+## Dicas de uso
 
-Confira na pasta `src/` um exemplo básico de estrutura de aplicação usando Streamlit.
+- Adapte o `perfil_profissional.json` para o seu próprio perfil antes de rodar
+- Comece testando o agente com as perguntas dos exemplos de interação em `docs/03-prompts.md`
+- Use o LLM-judge para avaliar automaticamente a qualidade das respostas geradas
+
+---
+
+## Contribuindo com exemplos
+
+Se você adaptou o agente para outro domínio (saúde, juridico, educação infantil...), considere abrir um PR com seu exemplo nesta pasta!

@@ -1,0 +1,116 @@
+{
+  "trilhas": [
+    {
+      "id": "T01",
+      "nome": "Desenvolvedor Back-end Python",
+      "nivel": "Júnior → Pleno",
+      "duracao_estimada_meses": 6,
+      "demanda_mercado": "Alta",
+      "salario_junior_brl": "3500-6000",
+      "etapas": [
+        "Python Intermediário (POO, decoradores, tipagem)",
+        "FastAPI ou Django REST Framework",
+        "Banco de Dados (PostgreSQL + ORM)",
+        "Docker e Docker Compose",
+        "Testes automatizados (pytest)",
+        "Deploy em Cloud (AWS ou GCP)"
+      ],
+      "certificacoes_recomendadas": ["AWS Cloud Practitioner", "Python Institute PCEP"],
+      "plataformas": ["Rocketseat", "Alura", "DIO", "Udemy"],
+      "pre_requisitos_atendidos_pelo_usuario": true
+    },
+    {
+      "id": "T02",
+      "nome": "Engenheiro de Dados",
+      "nivel": "Júnior",
+      "duracao_estimada_meses": 8,
+      "demanda_mercado": "Muito Alta",
+      "salario_junior_brl": "4000-7000",
+      "etapas": [
+        "SQL Avançado (CTEs, Window Functions, otimização)",
+        "Python para Dados (Pandas, NumPy, PySpark básico)",
+        "Pipelines ETL (Apache Airflow)",
+        "Data Warehouse (conceitos + BigQuery ou Redshift)",
+        "Cloud para Dados (AWS ou GCP)",
+        "Fundamentos de Machine Learning"
+      ],
+      "certificacoes_recomendadas": ["Google Professional Data Engineer", "AWS Data Analytics Specialty"],
+      "plataformas": ["Coursera", "DataCamp", "Alura", "DIO"],
+      "pre_requisitos_atendidos_pelo_usuario": true
+    },
+    {
+      "id": "T03",
+      "nome": "DevOps / SRE Júnior",
+      "nivel": "Júnior",
+      "duracao_estimada_meses": 7,
+      "demanda_mercado": "Alta",
+      "salario_junior_brl": "4500-8000",
+      "etapas": [
+        "Linux e Shell Script",
+        "Docker e Kubernetes",
+        "CI/CD (GitHub Actions, GitLab CI)",
+        "Infraestrutura como Código (Terraform)",
+        "Monitoramento (Prometheus + Grafana)",
+        "Cloud (AWS ou Azure)"
+      ],
+      "certificacoes_recomendadas": ["AWS Cloud Practitioner", "Certified Kubernetes Administrator (CKA)"],
+      "plataformas": ["Linux Foundation", "KodeKloud", "DIO", "Udemy"],
+      "pre_requisitos_atendidos_pelo_usuario": false
+    },
+    {
+      "id": "T04",
+      "nome": "Desenvolvedor Full Stack (Python + React)",
+      "nivel": "Júnior",
+      "duracao_estimada_meses": 9,
+      "demanda_mercado": "Média-Alta",
+      "salario_junior_brl": "3000-5500",
+      "etapas": [
+        "React Intermediário (hooks, context, React Query)",
+        "TypeScript Básico",
+        "FastAPI ou Node.js",
+        "Autenticação (JWT, OAuth2)",
+        "PostgreSQL",
+        "Deploy (Vercel + Railway ou AWS)"
+      ],
+      "certificacoes_recomendadas": ["Meta Front-End Developer (Coursera)"],
+      "plataformas": ["Rocketseat", "Alura", "freeCodeCamp"],
+      "pre_requisitos_atendidos_pelo_usuario": true
+    },
+    {
+      "id": "T05",
+      "nome": "Machine Learning Engineer",
+      "nivel": "Pleno (recomendado após júnior)",
+      "duracao_estimada_meses": 12,
+      "demanda_mercado": "Muito Alta",
+      "salario_junior_brl": "5000-9000",
+      "etapas": [
+        "Matemática para ML (álgebra linear, estatística, cálculo básico)",
+        "Python para ML (scikit-learn, Pandas)",
+        "Deep Learning (PyTorch ou TensorFlow)",
+        "MLOps básico (MLflow, deploy de modelos)",
+        "LLMs e Prompt Engineering",
+        "Cloud para ML (SageMaker ou Vertex AI)"
+      ],
+      "certificacoes_recomendadas": ["TensorFlow Developer Certificate", "AWS Machine Learning Specialty"],
+      "plataformas": ["Coursera (DeepLearning.AI)", "fast.ai", "Hugging Face"],
+      "pre_requisitos_atendidos_pelo_usuario": false
+    }
+  ],
+  "recursos_extras": [
+    {
+      "tipo": "Comunidade",
+      "nome": "Reprograma / He4rt Developers",
+      "descricao": "Comunidades ativas com mentorias gratuitas e vagas para iniciantes"
+    },
+    {
+      "tipo": "Plataforma de vagas",
+      "nome": "Gupy / LinkedIn / 99jobs",
+      "descricao": "Principais plataformas para busca de estágio e emprego júnior no Brasil"
+    },
+    {
+      "tipo": "Portfólio",
+      "nome": "GitHub + LinkedIn",
+      "descricao": "Essenciais para visibilidade. Projetos devem ter README detalhado e deploy funcionando"
+    }
+  ]
+}

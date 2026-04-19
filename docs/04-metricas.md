@@ -1,71 +1,94 @@
-# Avaliação e Métricas
+# 04 — Avaliação e Métricas
 
-## Como Avaliar seu Agente
+## Objetivo
 
-A avaliação pode ser feita de duas formas complementares:
-
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
+Garantir que o MentorIA entrega respostas que são ao mesmo tempo **úteis, personalizadas e confiáveis** — sem alucinações sobre trilhas, salários ou certificações.
 
 ---
 
-## Métricas de Qualidade
+## Métricas Principais
 
-| Métrica | O que avalia | Exemplo de teste |
-|---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
+### 1. Relevância ao Perfil (0–5)
+Avalia se a resposta levou em conta os dados reais do usuário (habilidades, cursos em andamento, objetivos).
 
-> [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
+| Pontuação | Critério |
+|---|---|
+| 5 | Resposta 100% personalizada, cita dados do perfil explicitamente |
+| 4 | Levou o perfil em conta, mas poderia ser mais específica |
+| 3 | Resposta válida, mas genérica — poderia ser dada a qualquer pessoa |
+| 1–2 | Ignorou o perfil completamente |
 
----
-
-## Exemplos de Cenários de Teste
-
-Crie testes simples para validar seu agente:
-
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
-
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
-
-### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
-
-### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+**Meta:** ≥ 4,0 de média.
 
 ---
 
-## Resultados
+### 2. Ausência de Alucinações (Pass/Fail)
+Verifica se trilhas, plataformas, certificações ou faixas salariais mencionadas estão na base de conhecimento.
 
-Após os testes, registre suas conclusões:
+**Critério de falha:** Qualquer recomendação de trilha, curso ou certificação que não conste no `trilhas_disponiveis.json`.
 
-**O que funcionou bem:**
-- [Liste aqui]
-
-**O que pode melhorar:**
-- [Liste aqui]
+**Meta:** 100% de Pass.
 
 ---
 
-## Métricas Avançadas (Opcional)
+### 3. Acionabilidade da Resposta (0–5)
+Avalia se a resposta gera uma ação clara que o usuário pode tomar imediatamente.
 
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
+| Pontuação | Critério |
+|---|---|
+| 5 | Próximo passo definido, com prazo e recurso específico |
+| 4 | Orienta bem, mas sem prazo claro |
+| 3 | Resposta informativa, mas sem call-to-action |
+| 1–2 | Vaga demais para gerar qualquer ação |
 
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
+**Meta:** ≥ 4,0 de média.
 
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+---
+
+### 4. Satisfação do Usuário (1–5)
+Coletada ao final de cada sessão com uma pergunta simples:
+
+> "Essa orientação foi útil para você? (1 = Não ajudou / 5 = Muito útil)"
+
+**Meta:** ≥ 4,0 de média (referência: histórico atual do usuário é 4,5).
+
+---
+
+### 5. Taxa de Redirecionamento Correto (%)
+Quando o usuário faz uma pergunta fora do escopo, o agente deve redirecionar sem frustrar.
+
+**Meta:** 100% das perguntas fora de escopo redirecionadas de forma amigável.
+
+---
+
+## Cenários de Teste Sugeridos
+
+| Cenário | Comportamento Esperado |
+|---|---|
+| "Me recomenda uma trilha" | Citar trilha do catálogo com etapas e prazo realista |
+| "Quanto vou ganhar?" | Dar faixas do JSON + disclaimer de estimativa |
+| "O que devo estudar essa semana?" | Mencionar cursos em andamento + plano prático |
+| "Me ensina machine learning do zero" | Verificar pré-requisitos e avisar se não estão atendidos |
+| "Qual a capital da França?" | Redirecionar para escopo de carreira/estudos |
+| "Existe a certificação XYZ?" (inexistente) | Afirmar que não está no catálogo e sugerir alternativa real |
+
+---
+
+## Ferramenta de Avaliação Sugerida
+
+Para avaliação mais formal, utilizar **LLM-as-judge**: enviar a conversa + critérios acima para um segundo modelo (ex: Claude Opus) e pedir pontuação estruturada em JSON.
+
+```python
+avaliacao_prompt = """
+Avalie a resposta do agente nos seguintes critérios (0-5 cada):
+- relevancia_ao_perfil
+- acionabilidade
+- ausencia_de_alucinacao (0 ou 5 apenas)
+
+Responda apenas em JSON.
+
+Pergunta do usuário: {pergunta}
+Resposta do agente: {resposta}
+Dados do perfil: {perfil}
+"""
+```
