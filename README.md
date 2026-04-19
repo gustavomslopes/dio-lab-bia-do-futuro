@@ -60,7 +60,7 @@ Documentação dos prompts que definem o comportamento do agente:
 Protótipo funcional do agente com:
 
 - Interface de chat via **Streamlit**
-- Integração com **API Claude (Anthropic)**
+- Integração com **Llama 3.3 70b via Groq API**
 - Leitura da base de conhecimento local (JSON + CSV)
 
 📁 [`src/app.py`](./src/app.py)
