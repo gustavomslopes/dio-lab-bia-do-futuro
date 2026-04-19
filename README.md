@@ -1,125 +1,115 @@
-# 🤖 Agente Financeiro Inteligente com IA Generativa
+# 🎓 Agente de Carreira e Estudos com IA Generativa
 
 ## Contexto
 
-Os assistentes virtuais no setor financeiro estão evoluindo de simples chatbots reativos para **agentes inteligentes e proativos**. Neste desafio, você vai idealizar e prototipar um agente financeiro que utiliza IA Generativa para:
+O mercado de trabalho evolui cada vez mais rápido, e profissionais precisam de orientação **personalizada e contínua** para tomar boas decisões sobre sua carreira e desenvolvimento. Neste projeto, foi idealizado e prototipado um agente inteligente que utiliza IA Generativa para:
 
-- **Antecipar necessidades** ao invés de apenas responder perguntas
-- **Personalizar** sugestões com base no contexto de cada cliente
-- **Cocriar soluções** financeiras de forma consultiva
-- **Garantir segurança** e confiabilidade nas respostas (anti-alucinação)
+- **Antecipar lacunas de habilidade** antes que se tornem um obstáculo na carreira
+- **Personalizar planos de estudo** com base no perfil e objetivos de cada usuário
+- **Sugerir trilhas de aprendizado** alinhadas ao mercado atual
+- **Garantir respostas confiáveis** sobre certificações, tecnologias e oportunidades (anti-alucinação)
 
-> [!TIP]
-> Na pasta [`examples/`](./examples/) você encontra referências de implementação para cada etapa deste desafio.
+> 💡 Na pasta [`examples/`](./examples) você encontra referências de implementação para cada etapa deste projeto.
 
 ---
 
-## O Que Você Deve Entregar
+## O Que Foi Entregue
 
 ### 1. Documentação do Agente
 
-Defina **o que** seu agente faz e **como** ele funciona:
+Definição do **o que** o agente faz e **como** ele funciona:
 
-- **Caso de Uso:** Qual problema financeiro ele resolve? (ex: consultoria de investimentos, planejamento de metas, alertas de gastos)
-- **Persona e Tom de Voz:** Como o agente se comporta e se comunica?
-- **Arquitetura:** Fluxo de dados e integração com a base de conhecimento
-- **Segurança:** Como evitar alucinações e garantir respostas confiáveis?
+- **Caso de Uso:** Consultoria de carreira e recomendação de trilhas de estudo para desenvolvedores
+- **Persona e Tom de Voz:** Mentor experiente, direto e encorajador
+- **Arquitetura:** Fluxo de dados com base de conhecimento e LLM
+- **Segurança:** Estratégias para evitar alucinações em recomendações de carreira
 
-📄 **Template:** [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
+📄 [`docs/01-documentacao-agente.md`](./docs/01-documentacao-agente.md)
 
 ---
 
 ### 2. Base de Conhecimento
 
-Utilize os **dados mockados** disponíveis na pasta [`data/`](./data/) para alimentar seu agente:
+Dados mockados disponíveis na pasta [`data/`](./data):
 
 | Arquivo | Formato | Descrição |
-|---------|---------|-----------|
-| `transacoes.csv` | CSV | Histórico de transações do cliente |
-| `historico_atendimento.csv` | CSV | Histórico de atendimentos anteriores |
-| `perfil_investidor.json` | JSON | Perfil e preferências do cliente |
-| `produtos_financeiros.json` | JSON | Produtos e serviços disponíveis |
+|---|---|---|
+| `historico_estudos.csv` | CSV | Histórico de cursos e certificações do usuário |
+| `historico_atendimento.csv` | CSV | Histórico de sessões com o agente |
+| `perfil_profissional.json` | JSON | Perfil, habilidades e objetivos do usuário |
+| `trilhas_disponiveis.json` | JSON | Trilhas de aprendizado e certificações disponíveis |
 
-Você pode adaptar ou expandir esses dados conforme seu caso de uso.
-
-📄 **Template:** [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
+📄 [`docs/02-base-conhecimento.md`](./docs/02-base-conhecimento.md)
 
 ---
 
 ### 3. Prompts do Agente
 
-Documente os prompts que definem o comportamento do seu agente:
+Documentação dos prompts que definem o comportamento do agente:
 
-- **System Prompt:** Instruções gerais de comportamento e restrições
-- **Exemplos de Interação:** Cenários de uso com entrada e saída esperada
-- **Tratamento de Edge Cases:** Como o agente lida com situações limite
+- **System Prompt:** Instruções de comportamento, tom de voz e restrições
+- **Exemplos de Interação:** Cenários reais com entrada e saída esperada
+- **Edge Cases:** Como o agente lida com perguntas fora do escopo
 
-📄 **Template:** [`docs/03-prompts.md`](./docs/03-prompts.md)
+📄 [`docs/03-prompts.md`](./docs/03-prompts.md)
 
 ---
 
 ### 4. Aplicação Funcional
 
-Desenvolva um **protótipo funcional** do seu agente:
+Protótipo funcional do agente com:
 
-- Chatbot interativo (sugestão: Streamlit, Gradio ou similar)
-- Integração com LLM (via API ou modelo local)
-- Conexão com a base de conhecimento
+- Interface de chat via **Streamlit**
+- Integração com **API Claude (Anthropic)**
+- Leitura da base de conhecimento local (JSON + CSV)
 
-📁 **Pasta:** [`src/`](./src/)
+📁 [`src/app.py`](./src/app.py)
 
 ---
 
 ### 5. Avaliação e Métricas
 
-Descreva como você avalia a qualidade do seu agente:
+Métricas utilizadas para avaliar a qualidade do agente:
 
-**Métricas Sugeridas:**
-- Precisão/assertividade das respostas
-- Taxa de respostas seguras (sem alucinações)
-- Coerência com o perfil do cliente
+- Relevância das recomendações ao perfil do usuário
+- Taxa de respostas sem alucinações
+- Alinhamento das sugestões com o mercado real
 
-📄 **Template:** [`docs/04-metricas.md`](./docs/04-metricas.md)
+📄 [`docs/04-metricas.md`](./docs/04-metricas.md)
 
 ---
 
 ### 6. Pitch
 
-Grave um **pitch de 3 minutos** (estilo elevador) apresentando:
+Roteiro do pitch de 3 minutos apresentando o agente.
 
-- Qual problema seu agente resolve?
-- Como ele funciona na prática?
-- Por que essa solução é inovadora?
-
-📄 **Template:** [`docs/05-pitch.md`](./docs/05-pitch.md)
+📄 [`docs/05-pitch.md`](./docs/05-pitch.md)
 
 ---
 
-## Ferramentas Sugeridas
-
-Todas as ferramentas abaixo possuem versões gratuitas:
+## Ferramentas Utilizadas
 
 | Categoria | Ferramentas |
-|-----------|-------------|
-| **LLMs** | [ChatGPT](https://chat.openai.com/), [Copilot](https://copilot.microsoft.com/), [Gemini](https://gemini.google.com/), [Claude](https://claude.ai/), [Ollama](https://ollama.ai/) |
-| **Desenvolvimento** | [Streamlit](https://streamlit.io/), [Gradio](https://www.gradio.app/), [Google Colab](https://colab.research.google.com/) |
-| **Orquestração** | [LangChain](https://www.langchain.com/), [LangFlow](https://www.langflow.org/), [CrewAI](https://www.crewai.com/) |
-| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Draw.io](https://app.diagrams.net/), [Excalidraw](https://excalidraw.com/) |
+|---|---|
+| **LLM** | [Claude (Anthropic)](https://claude.ai/) |
+| **Desenvolvimento** | [Streamlit](https://streamlit.io/), Python |
+| **Orquestração** | Nativo com API REST |
+| **Diagramas** | [Mermaid](https://mermaid.js.org/), [Excalidraw](https://excalidraw.com/) |
 
 ---
 
 ## Estrutura do Repositório
 
 ```
-📁 lab-agente-financeiro/
+📁 dio-lab-agente-carreira/
 │
 ├── 📄 README.md
 │
 ├── 📁 data/                          # Dados mockados para o agente
-│   ├── historico_atendimento.csv     # Histórico de atendimentos (CSV)
-│   ├── perfil_investidor.json        # Perfil do cliente (JSON)
-│   ├── produtos_financeiros.json     # Produtos disponíveis (JSON)
-│   └── transacoes.csv                # Histórico de transações (CSV)
+│   ├── historico_estudos.csv         # Histórico de cursos e certificações (CSV)
+│   ├── historico_atendimento.csv     # Histórico de sessões com o agente (CSV)
+│   ├── perfil_profissional.json      # Perfil e objetivos do usuário (JSON)
+│   └── trilhas_disponiveis.json      # Trilhas e certificações disponíveis (JSON)
 │
 ├── 📁 docs/                          # Documentação do projeto
 │   ├── 01-documentacao-agente.md     # Caso de uso e arquitetura
@@ -129,10 +119,9 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 │   └── 05-pitch.md                   # Roteiro do pitch
 │
 ├── 📁 src/                           # Código da aplicação
-│   └── app.py                        # (exemplo de estrutura)
+│   └── app.py                        # Chatbot Streamlit + Claude API
 │
 ├── 📁 assets/                        # Imagens e diagramas
-│   └── ...
 │
 └── 📁 examples/                      # Referências e exemplos
     └── README.md
@@ -140,10 +129,33 @@ Todas as ferramentas abaixo possuem versões gratuitas:
 
 ---
 
-## Dicas Finais
+## Como Rodar Localmente
 
-1. **Comece pelo prompt:** Um bom system prompt é a base de um agente eficaz
-2. **Use os dados mockados:** Eles garantem consistência e evitam problemas com dados sensíveis
-3. **Foque na segurança:** No setor financeiro, evitar alucinações é crítico
-4. **Teste cenários reais:** Simule perguntas que um cliente faria de verdade
-5. **Seja direto no pitch:** 3 minutos passam rápido, vá ao ponto
+```bash
+# 1. Clone o repositório
+git clone https://github.com/gustavomslopes/dio-lab-bia-do-futuro.git
+cd dio-lab-bia-do-futuro
+
+# 2. Instale as dependências
+pip install streamlit anthropic pandas
+
+# 3. Configure sua chave de API
+export ANTHROPIC_API_KEY="sua-chave-aqui"
+
+# 4. Rode a aplicação
+streamlit run src/app.py
+```
+
+---
+
+## Dicas
+
+1. **Comece pelo system prompt:** A persona do mentor define tudo
+2. **Use os dados mockados:** Eles simulam um usuário real com histórico consistente
+3. **Foque na personalização:** O diferencial é recomendar com base no perfil, não genericamente
+4. **Teste perguntas reais:** "Devo aprender Rust ou Go?", "Quanto tempo pra conseguir emprego em dados?"
+5. **Anti-alucinação:** Nunca invente vagas, salários ou prazos — só recomende o que está na base
+
+---
+
+*Projeto desenvolvido como parte do lab **"BIA do Futuro"** da [DIO](https://www.dio.me/), adaptado para o domínio de Carreira e Estudos.*
