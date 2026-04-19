@@ -91,7 +91,7 @@ Roteiro do pitch de 3 minutos apresentando o agente.
 
 | Categoria | Ferramentas |
 |---|---|
-| **LLM** | [Claude (Anthropic)](https://claude.ai/) |
+| **LLM** | [Llama 3.3 70b via Groq](https://console.groq.com) |
 | **Desenvolvimento** | [Streamlit](https://streamlit.io/), Python |
 | **Orquestração** | Nativo com API REST |
 | **Diagramas** | [Mermaid](https://mermaid.js.org/), [Excalidraw](https://excalidraw.com/) |
@@ -137,10 +137,13 @@ git clone https://github.com/gustavomslopes/dio-lab-bia-do-futuro.git
 cd dio-lab-bia-do-futuro
 
 # 2. Instale as dependências
-pip install streamlit anthropic pandas
+pip install streamlit groq pandas
 
-# 3. Configure sua chave de API
-export ANTHROPIC_API_KEY="sua-chave-aqui"
+# 3. Configure sua chave de API (obtenha gratuitamente em console.groq.com)
+# Windows (PowerShell):
+$env:GROQ_API_KEY="sua-chave-aqui"
+# Linux/Mac:
+export GROQ_API_KEY="sua-chave-aqui"
 
 # 4. Rode a aplicação
 streamlit run src/app.py
