@@ -1,9 +1,6 @@
 id,data,duracao_min,tema,resumo_sessao,satisfacao
-1,2024-06-10,12,Trilha de carreira,"Usuário perguntou sobre transição para a área de dados. Agente sugeriu trilha iniciando por SQL e Python para análise, seguido de bibliotecas como Pandas e Matplotlib.",5
-2,2024-06-25,8,Certificações,"Discussão sobre certificações AWS. Agente recomendou começar pela AWS Cloud Practitioner antes de tentar Solutions Architect.",4
-3,2024-07-15,20,Revisão de currículo,"Usuário compartilhou dúvidas sobre como apresentar projetos acadêmicos no LinkedIn. Agente orientou sobre estrutura de projetos e palavras-chave para ATS.",5
-4,2024-07-30,10,Preparação para entrevistas,"Agente apresentou perguntas técnicas comuns sobre Python e estruturas de dados. Usuário praticou respostas STAR para entrevistas comportamentais.",4
-5,2024-08-20,15,Mercado de trabalho,"Usuário perguntou sobre salários em diferentes áreas. Agente apresentou faixas salariais médias para júnior em back-end, dados e DevOps no Brasil.",5
-6,2024-09-05,7,Dúvidas técnicas,"Dúvida sobre diferença entre REST e GraphQL. Agente explicou casos de uso de cada abordagem.",5
-7,2024-09-22,18,Plano de estudos,"Agente montou plano de estudos para os próximos 3 meses focado em concluir cursos em andamento e iniciar Kubernetes.",3
-8,2024-10-10,9,Carreira internacional,"Usuário demonstrou interesse em trabalhar remotamente para empresa estrangeira. Agente orientou sobre preparação de currículo em inglês e plataformas como LinkedIn, Toptal e Turing.",4
+1,2024-04-10,10,Trilha de carreira,"Usuário perguntou por onde começar na área de back-end. Agente sugeriu focar em Python com Flask e SQL antes de partir para frameworks maiores.",4
+2,2024-05-03,8,Certificações,"Discussão sobre quais certificações valem mais para júnior. Agente recomendou começar pela AWS Cloud Practitioner após concluir os fundamentos.",4
+3,2024-06-15,15,Portfólio,"Usuário tem apenas 2 projetos no GitHub. Agente orientou sobre como estruturar projetos com README detalhado e deploy funcionando para chamar atenção de recrutadores.",5
+4,2024-07-20,12,Preparação para estágio,"Agente apresentou as perguntas técnicas mais comuns em processos seletivos para estágio em desenvolvimento. Usuário praticou respostas sobre lógica e estruturas de dados.",4
+5,2024-08-30,9,Plano de estudos,"Agente identificou 2 cursos em andamento há meses sem progresso. Montou plano para concluir JavaScript e Python for Everybody nos próximos 60 dias.",3

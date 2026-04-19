@@ -1,16 +1,11 @@
 id,data,plataforma,curso,categoria,carga_horaria,status,nota,certificado
-1,2023-03-10,DIO,Introdução ao Git e GitHub,DevOps,4,Concluído,95,Sim
-2,2023-04-02,Coursera,Python for Everybody,Programação,30,Concluído,88,Sim
-3,2023-05-15,Udemy,Desenvolvimento Web Completo,Front-end,60,Concluído,82,Não
-4,2023-07-20,DIO,Fundamentos de Machine Learning,IA/ML,10,Concluído,90,Sim
-5,2023-09-01,Alura,React do Zero ao Avançado,Front-end,40,Concluído,78,Sim
-6,2023-10-14,YouTube,Docker para Desenvolvedores,DevOps,8,Concluído,,Não
-7,2023-11-05,Coursera,Machine Learning Specialization,IA/ML,90,Em andamento,,Não
-8,2024-01-18,DIO,Arquitetura de Microsserviços,Back-end,12,Concluído,91,Sim
-9,2024-02-22,Udemy,FastAPI - APIs Modernas com Python,Back-end,20,Concluído,85,Não
-10,2024-04-10,LinkedIn Learning,Soft Skills para Tech,Carreira,5,Concluído,100,Sim
-11,2024-05-30,Alura,SQL e Banco de Dados Relacional,Dados,25,Concluído,80,Sim
-12,2024-07-08,DIO,Cloud AWS Foundations,Cloud,15,Em andamento,,Não
-13,2024-08-15,Coursera,Deep Learning Specialization,IA/ML,120,Não iniciado,,Não
-14,2024-09-01,Rocketseat,Node.js do Zero,Back-end,35,Em andamento,,Não
-15,2024-10-20,DIO,Kubernetes Essentials,DevOps,10,Não iniciado,,Não
+1,2023-02-10,DIO,Introdução ao Git e GitHub,DevOps,4,Concluído,88,Sim
+2,2023-03-15,DIO,Introdução ao Python,Programação,10,Concluído,85,Sim
+3,2023-05-20,Alura,HTML e CSS para Iniciantes,Front-end,20,Concluído,90,Sim
+4,2023-07-10,Udemy,JavaScript do Zero ao Avançado,Front-end,52,Em andamento,,Não
+5,2023-09-05,DIO,Fundamentos de SQL,Dados,8,Concluído,80,Não
+6,2023-10-18,Coursera,Python for Everybody,Programação,30,Em andamento,,Não
+7,2023-11-01,Alura,Java Orientado a Objetos,Programação,35,Concluído,75,Sim
+8,2024-01-12,DIO,Linux Essentials,DevOps,6,Concluído,82,Não
+9,2024-03-08,Udemy,APIs REST com Flask,Back-end,18,Não iniciado,,Não
+10,2024-05-22,DIO,Cloud AWS Foundations,Cloud,15,Não iniciado,,Não

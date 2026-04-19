@@ -1,70 +1,59 @@
 {
   "perfil": {
-    "nome": "Gustavo Lopes",
-    "idade": 19,
-    "localizacao": "Presidente Prudente, SP",
-    "formacao_atual": "Ciência da Computação - 3º semestre (Unoeste)",
-    "conclusao_prevista": "2027",
+    "nome": "Lucas Martins",
+    "idade": 21,
+    "localizacao": "São Paulo, SP",
+    "formacao_atual": "Análise e Desenvolvimento de Sistemas - 4º semestre (FATEC)",
+    "conclusao_prevista": "2026",
     "nivel_experiencia": "Estudante / Júnior",
-    "objetivo_curto_prazo": "Conseguir primeiro emprego ou estágio na área de tecnologia até meados de 2025",
-    "objetivo_longo_prazo": "Trabalhar como desenvolvedor back-end ou engenheiro de dados em empresa com atuação internacional"
+    "objetivo_curto_prazo": "Conseguir primeiro estágio na área de desenvolvimento até o final de 2025",
+    "objetivo_longo_prazo": "Trabalhar como desenvolvedor back-end em uma empresa de produtos digitais"
   },
   "habilidades_tecnicas": [
-    { "habilidade": "Python", "nivel": "Intermediário" },
-    { "habilidade": "JavaScript", "nivel": "Intermediário" },
-    { "habilidade": "HTML/CSS", "nivel": "Avançado" },
-    { "habilidade": "React", "nivel": "Básico" },
-    { "habilidade": "C / C++", "nivel": "Básico" },
-    { "habilidade": "SQL", "nivel": "Intermediário" },
-    { "habilidade": "Git / GitHub", "nivel": "Intermediário" },
-    { "habilidade": "FastAPI", "nivel": "Básico" },
-    { "habilidade": "Docker", "nivel": "Básico" },
-    { "habilidade": "SwiftUI", "nivel": "Básico" }
+    { "habilidade": "Python", "nivel": "Básico" },
+    { "habilidade": "JavaScript", "nivel": "Básico" },
+    { "habilidade": "HTML/CSS", "nivel": "Intermediário" },
+    { "habilidade": "Java", "nivel": "Básico" },
+    { "habilidade": "SQL", "nivel": "Básico" },
+    { "habilidade": "Git / GitHub", "nivel": "Básico" },
+    { "habilidade": "Linux", "nivel": "Básico" }
   ],
   "areas_de_interesse": [
-    "Back-end (Python/Node.js)",
-    "Engenharia de Dados",
-    "Inteligência Artificial aplicada",
-    "DevOps / Cloud"
+    "Back-end",
+    "Banco de Dados",
+    "APIs REST",
+    "Cloud Computing"
   ],
   "areas_de_menor_interesse": [
-    "Front-end puro",
-    "Gestão de projetos",
+    "Design / UI",
+    "Mobile",
     "Suporte técnico"
   ],
   "preferencias_aprendizado": {
-    "formato_preferido": "Projetos práticos e vídeo-aulas",
-    "disponibilidade_semanal_horas": 12,
-    "idioma_conforto": "Português (aceita inglês em materiais técnicos)"
+    "formato_preferido": "Vídeo-aulas com projetos práticos",
+    "disponibilidade_semanal_horas": 10,
+    "idioma_conforto": "Português (inglês técnico para leitura)"
   },
   "projetos_realizados": [
     {
-      "nome": "Sênior Connect",
-      "descricao": "Plataforma de voluntariado e inclusão social com autenticação e CRUD (Flask + SQLite3)",
-      "tecnologias": ["Python", "Flask", "SQLite3", "HTML", "CSS"]
+      "nome": "Sistema de Cadastro de Clientes",
+      "descricao": "CRUD simples com Python e SQLite para cadastro e consulta de clientes",
+      "tecnologias": ["Python", "SQLite", "Tkinter"]
     },
     {
-      "nome": "Chatbot com Dialogflow",
-      "descricao": "Chatbot integrado com Dialogflow e API Gemini para atendimento automatizado",
-      "tecnologias": ["Python", "Dialogflow", "Gemini API"]
-    },
-    {
-      "nome": "Análise de Dados com Orange",
-      "descricao": "Projeto acadêmico com árvore de decisão e matriz de confusão em datasets UCI/Kaggle",
-      "tecnologias": ["Orange", "Python", "R"]
+      "nome": "Landing Page de Portfólio",
+      "descricao": "Página pessoal com HTML, CSS e JavaScript para apresentar projetos acadêmicos",
+      "tecnologias": ["HTML", "CSS", "JavaScript"]
     }
   ],
   "certificacoes_obtidas": [
     "Git e GitHub Fundamentals (DIO)",
-    "Python for Everybody (Coursera)",
-    "Machine Learning Foundations (DIO)",
-    "React do Zero ao Avançado (Alura)",
-    "Soft Skills para Tech (LinkedIn Learning)",
-    "SQL e Banco de Dados Relacional (Alura)"
+    "Introdução ao Python (DIO)",
+    "HTML e CSS para Iniciantes (Alura)"
   ],
   "pontos_de_atencao": [
-    "Cursos em andamento há mais de 2 meses sem progresso recente (AWS, Node.js)",
-    "Área de Cloud ainda com nível básico — importante para mercado atual",
-    "Inglês técnico suficiente para leitura, mas comunicação oral não avaliada"
+    "Portfólio no GitHub ainda com poucos projetos finalizados",
+    "Nenhuma experiência profissional ainda (apenas acadêmica)",
+    "Cursos em andamento sem progresso recente"
   ]
 }

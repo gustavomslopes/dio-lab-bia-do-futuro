@@ -3,17 +3,17 @@
     {
       "id": "T01",
       "nome": "Desenvolvedor Back-end Python",
-      "nivel": "Júnior → Pleno",
-      "duracao_estimada_meses": 6,
+      "nivel": "Júnior",
+      "duracao_estimada_meses": 7,
       "demanda_mercado": "Alta",
       "salario_junior_brl": "3500-6000",
       "etapas": [
         "Python Intermediário (POO, decoradores, tipagem)",
-        "FastAPI ou Django REST Framework",
+        "FastAPI ou Flask",
         "Banco de Dados (PostgreSQL + ORM)",
-        "Docker e Docker Compose",
+        "Docker básico",
         "Testes automatizados (pytest)",
-        "Deploy em Cloud (AWS ou GCP)"
+        "Deploy em Cloud (AWS ou Railway)"
       ],
       "certificacoes_recomendadas": ["AWS Cloud Practitioner", "Python Institute PCEP"],
       "plataformas": ["Rocketseat", "Alura", "DIO", "Udemy"],
@@ -23,84 +23,64 @@
       "id": "T02",
       "nome": "Engenheiro de Dados",
       "nivel": "Júnior",
-      "duracao_estimada_meses": 8,
+      "duracao_estimada_meses": 9,
       "demanda_mercado": "Muito Alta",
       "salario_junior_brl": "4000-7000",
       "etapas": [
-        "SQL Avançado (CTEs, Window Functions, otimização)",
-        "Python para Dados (Pandas, NumPy, PySpark básico)",
-        "Pipelines ETL (Apache Airflow)",
-        "Data Warehouse (conceitos + BigQuery ou Redshift)",
+        "SQL Avançado (CTEs, Window Functions)",
+        "Python para Dados (Pandas, NumPy)",
+        "Pipelines ETL (Apache Airflow básico)",
+        "Data Warehouse (conceitos + BigQuery)",
         "Cloud para Dados (AWS ou GCP)",
         "Fundamentos de Machine Learning"
       ],
       "certificacoes_recomendadas": ["Google Professional Data Engineer", "AWS Data Analytics Specialty"],
       "plataformas": ["Coursera", "DataCamp", "Alura", "DIO"],
-      "pre_requisitos_atendidos_pelo_usuario": true
+      "pre_requisitos_atendidos_pelo_usuario": false
     },
     {
       "id": "T03",
-      "nome": "DevOps / SRE Júnior",
+      "nome": "Desenvolvedor Full Stack (JavaScript)",
       "nivel": "Júnior",
-      "duracao_estimada_meses": 7,
+      "duracao_estimada_meses": 8,
+      "demanda_mercado": "Alta",
+      "salario_junior_brl": "3000-5500",
+      "etapas": [
+        "JavaScript Intermediário (ES6+, async/await)",
+        "React básico",
+        "Node.js com Express",
+        "Banco de Dados (MongoDB ou PostgreSQL)",
+        "Deploy (Vercel + Railway)"
+      ],
+      "certificacoes_recomendadas": ["Meta Front-End Developer (Coursera)"],
+      "plataformas": ["Rocketseat", "freeCodeCamp", "Alura"],
+      "pre_requisitos_atendidos_pelo_usuario": true
+    },
+    {
+      "id": "T04",
+      "nome": "DevOps Júnior",
+      "nivel": "Júnior",
+      "duracao_estimada_meses": 8,
       "demanda_mercado": "Alta",
       "salario_junior_brl": "4500-8000",
       "etapas": [
         "Linux e Shell Script",
-        "Docker e Kubernetes",
-        "CI/CD (GitHub Actions, GitLab CI)",
-        "Infraestrutura como Código (Terraform)",
-        "Monitoramento (Prometheus + Grafana)",
-        "Cloud (AWS ou Azure)"
+        "Docker e Docker Compose",
+        "CI/CD com GitHub Actions",
+        "Kubernetes básico",
+        "Cloud (AWS ou Azure)",
+        "Monitoramento (Prometheus + Grafana)"
       ],
       "certificacoes_recomendadas": ["AWS Cloud Practitioner", "Certified Kubernetes Administrator (CKA)"],
-      "plataformas": ["Linux Foundation", "KodeKloud", "DIO", "Udemy"],
-      "pre_requisitos_atendidos_pelo_usuario": false
-    },
-    {
-      "id": "T04",
-      "nome": "Desenvolvedor Full Stack (Python + React)",
-      "nivel": "Júnior",
-      "duracao_estimada_meses": 9,
-      "demanda_mercado": "Média-Alta",
-      "salario_junior_brl": "3000-5500",
-      "etapas": [
-        "React Intermediário (hooks, context, React Query)",
-        "TypeScript Básico",
-        "FastAPI ou Node.js",
-        "Autenticação (JWT, OAuth2)",
-        "PostgreSQL",
-        "Deploy (Vercel + Railway ou AWS)"
-      ],
-      "certificacoes_recomendadas": ["Meta Front-End Developer (Coursera)"],
-      "plataformas": ["Rocketseat", "Alura", "freeCodeCamp"],
-      "pre_requisitos_atendidos_pelo_usuario": true
-    },
-    {
-      "id": "T05",
-      "nome": "Machine Learning Engineer",
-      "nivel": "Pleno (recomendado após júnior)",
-      "duracao_estimada_meses": 12,
-      "demanda_mercado": "Muito Alta",
-      "salario_junior_brl": "5000-9000",
-      "etapas": [
-        "Matemática para ML (álgebra linear, estatística, cálculo básico)",
-        "Python para ML (scikit-learn, Pandas)",
-        "Deep Learning (PyTorch ou TensorFlow)",
-        "MLOps básico (MLflow, deploy de modelos)",
-        "LLMs e Prompt Engineering",
-        "Cloud para ML (SageMaker ou Vertex AI)"
-      ],
-      "certificacoes_recomendadas": ["TensorFlow Developer Certificate", "AWS Machine Learning Specialty"],
-      "plataformas": ["Coursera (DeepLearning.AI)", "fast.ai", "Hugging Face"],
+      "plataformas": ["KodeKloud", "Linux Foundation", "DIO", "Udemy"],
       "pre_requisitos_atendidos_pelo_usuario": false
     }
   ],
   "recursos_extras": [
     {
       "tipo": "Comunidade",
-      "nome": "Reprograma / He4rt Developers",
-      "descricao": "Comunidades ativas com mentorias gratuitas e vagas para iniciantes"
+      "nome": "He4rt Developers / Reprograma",
+      "descricao": "Comunidades com mentorias gratuitas e vagas para iniciantes"
     },
     {
       "tipo": "Plataforma de vagas",
@@ -110,7 +90,7 @@
     {
       "tipo": "Portfólio",
       "nome": "GitHub + LinkedIn",
-      "descricao": "Essenciais para visibilidade. Projetos devem ter README detalhado e deploy funcionando"
+      "descricao": "Projetos devem ter README detalhado e deploy funcionando para atrair recrutadores"
     }
   ]
 }

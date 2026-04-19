@@ -2,7 +2,7 @@ import os
 import json
 import pandas as pd
 import streamlit as st
-import anthropic
+from groq import Groq
 
 # ── Configuração da página ─────────────────────────────────────────────────────
 st.set_page_config(
@@ -114,19 +114,21 @@ if prompt := st.chat_input("Digite sua pergunta..."):
     # Chamada à API Claude
     with st.chat_message("assistant"):
         with st.spinner("Pensando..."):
-            client = anthropic.Anthropic(api_key=os.environ.get("ANTHROPIC_API_KEY"))
+            client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
-            response = client.messages.create(
-                model="claude-sonnet-4-20250514",
+            response = client.chat.completions.create(
+                model="llama-3.3-70b-versatile",
                 max_tokens=1024,
-                system=SYSTEM_PROMPT,
                 messages=[
-                    {"role": m["role"], "content": m["content"]}
-                    for m in st.session_state.messages
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    *[
+                        {"role": m["role"], "content": m["content"]}
+                        for m in st.session_state.messages
+                    ],
                 ],
             )
 
-            resposta = response.content[0].text
+            resposta = response.choices[0].message.content
             st.markdown(resposta)
 
     st.session_state.messages.append({"role": "assistant", "content": resposta})
